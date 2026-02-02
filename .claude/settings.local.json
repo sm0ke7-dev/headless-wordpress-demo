@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(xargs rm:*)",
+      "Bash(for file in src/components/services/Layout423.tsx src/components/service-single/Layout423.tsx)",
+      "Bash(do sed -i 's/const \\\\[hoveredFeatureIdx, setHoveredFeatureIdx\\\\] = useState\\(null\\);/const [hoveredFeatureIdx, setHoveredFeatureIdx] = useState<number | null>\\(null\\);/g; s/const handleMouseEnter = \\(index\\) =>/const handleMouseEnter = \\(index: number\\) =>/g; s/const startAnimation = \\(index\\) =>/const startAnimation = \\(index: number\\) =>/g' \"$file\")",
+      "Bash(done)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(tasklist:*)",
+      "Bash(npm run dev:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
