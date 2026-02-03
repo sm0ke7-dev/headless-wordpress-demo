@@ -2,8 +2,13 @@
 
 import React from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
+import type { Location } from "@/lib/wordpress";
 
-export function Contact19() {
+interface Contact19Props {
+  location: Location;
+}
+
+export function Contact19({ location }: Contact19Props) {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -18,48 +23,56 @@ export function Contact19() {
           </p>
         </div>
         <div className="grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-3 md:gap-y-16">
-          <div>
-            <div className="mb-5 lg:mb-6">
-              <BiEnvelope className="size-12" />
+          {location.acf.email && (
+            <div>
+              <div className="mb-5 lg:mb-6">
+                <BiEnvelope className="size-12" />
+              </div>
+              <h3 className="mb-3 text-2xl font-bold leading-[1.4] md:text-3xl lg:mb-4 lg:text-4xl">
+                Email
+              </h3>
+              <p className="mb-5 md:mb-6">
+                Send us a message and we'll respond within one business day
+              </p>
+              <a className="underline" href={`mailto:${location.acf.email}`}>
+                {location.acf.email}
+              </a>
             </div>
-            <h3 className="mb-3 text-2xl font-bold leading-[1.4] md:text-3xl lg:mb-4 lg:text-4xl">
-              Email
-            </h3>
-            <p className="mb-5 md:mb-6">
-              Send us a message and we'll respond within one business day
-            </p>
-            <a className="underline" href="#">
-              hello@relume.io
-            </a>
-          </div>
-          <div>
-            <div className="mb-5 lg:mb-6">
-              <BiPhone className="size-12" />
+          )}
+
+          {location.acf.phone && (
+            <div>
+              <div className="mb-5 lg:mb-6">
+                <BiPhone className="size-12" />
+              </div>
+              <h3 className="mb-3 text-2xl font-bold leading-[1.4] md:text-3xl lg:mb-4 lg:text-4xl">
+                Phone
+              </h3>
+              <p className="mb-5 md:mb-6">
+                Give us a call during business hours
+              </p>
+              <a className="underline" href={`tel:${location.acf.phone}`}>
+                {location.acf.phone}
+              </a>
             </div>
-            <h3 className="mb-3 text-2xl font-bold leading-[1.4] md:text-3xl lg:mb-4 lg:text-4xl">
-              Phone
-            </h3>
-            <p className="mb-5 md:mb-6">
-              Call to schedule or verify your insurance coverage
-            </p>
-            <a className="underline" href="#">
-              +1 (408) 555-0147
-            </a>
-          </div>
-          <div>
-            <div className="mb-5 lg:mb-6">
-              <BiMap className="size-12" />
+          )}
+
+          {location.acf.address && (
+            <div>
+              <div className="mb-5 lg:mb-6">
+                <BiMap className="size-12" />
+              </div>
+              <h3 className="mb-3 text-2xl font-bold leading-[1.4] md:text-3xl lg:mb-4 lg:text-4xl">
+                Address
+              </h3>
+              <p className="mb-5 md:mb-6">
+                Visit us at our clinic location
+              </p>
+              <address className="not-italic">
+                {location.acf.address}
+              </address>
             </div>
-            <h3 className="mb-3 text-2xl font-bold leading-[1.4] md:text-3xl lg:mb-4 lg:text-4xl">
-              Office
-            </h3>
-            <p className="mb-5 md:mb-6">
-              Monday to Friday 7am to 7pm, Saturday 8am to 2pm
-            </p>
-            <a className="underline" href="#">
-              1247 Meridian Ave, San Jose CA 95125
-            </a>
-          </div>
+          )}
         </div>
       </div>
     </section>
