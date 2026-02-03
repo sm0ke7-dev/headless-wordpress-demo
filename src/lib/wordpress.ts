@@ -1,6 +1,33 @@
 // WordPress API Configuration
 const WP_API_URL = 'http://physio-physical-therapy.local/wp-json/wp/v2';
 
+/**
+ * Helper function to get image URL from WordPress media ID
+ */
+async function getImageUrl(imageId: number | string): Promise<string> {
+  // If it's already a URL string, return it
+  if (typeof imageId === 'string') {
+    return imageId;
+  }
+
+  // If it's 0 or falsy, return empty string
+  if (!imageId) {
+    return '';
+  }
+
+  try {
+    const res = await fetch(`${WP_API_URL}/media/${imageId}`);
+    if (!res.ok) {
+      return '';
+    }
+    const media = await res.json();
+    return media.source_url || '';
+  } catch (error) {
+    console.error('Error fetching media:', error);
+    return '';
+  }
+}
+
 // Type definitions for our WordPress data
 export interface Service {
   id: number;
@@ -8,7 +35,7 @@ export interface Service {
   content: { rendered: string };
   slug: string;
   acf: {
-    featured_image: string;
+    featured_image: string | number;
     short_description: string;
     full_description: string;
     benefits: string;
@@ -25,7 +52,7 @@ export interface Location {
     phone: string;
     email: string;
     hours: string;
-    featured_image: string;
+    featured_image: string | number;
   };
 }
 
@@ -35,7 +62,7 @@ export interface Testimonial {
   content: { rendered: string };
   acf: {
     client_name: string;
-    client_photo: string;
+    client_photo: string | number;
     rating: number;
     company_title: string;
     testimonial_text: string;
@@ -55,7 +82,19 @@ export async function getServices(): Promise<Service[]> {
       throw new Error('Failed to fetch services');
     }
 
-    return res.json();
+    const services = await res.json();
+
+    // Convert image IDs to URLs
+    const servicesWithImages = await Promise.all(
+      services.map(async (service: Service) => {
+        if (service.acf.featured_image) {
+          service.acf.featured_image = await getImageUrl(service.acf.featured_image);
+        }
+        return service;
+      })
+    );
+
+    return servicesWithImages;
   } catch (error) {
     console.error('Error fetching services:', error);
     return [];
@@ -76,7 +115,14 @@ export async function getServiceBySlug(slug: string): Promise<Service | null> {
     }
 
     const services = await res.json();
-    return services[0] || null;
+    const service = services[0] || null;
+
+    // Convert image ID to URL
+    if (service && service.acf.featured_image) {
+      service.acf.featured_image = await getImageUrl(service.acf.featured_image);
+    }
+
+    return service;
   } catch (error) {
     console.error('Error fetching service:', error);
     return null;
@@ -96,7 +142,19 @@ export async function getLocations(): Promise<Location[]> {
       throw new Error('Failed to fetch locations');
     }
 
-    return res.json();
+    const locations = await res.json();
+
+    // Convert image IDs to URLs
+    const locationsWithImages = await Promise.all(
+      locations.map(async (location: Location) => {
+        if (location.acf.featured_image) {
+          location.acf.featured_image = await getImageUrl(location.acf.featured_image);
+        }
+        return location;
+      })
+    );
+
+    return locationsWithImages;
   } catch (error) {
     console.error('Error fetching locations:', error);
     return [];
@@ -117,7 +175,14 @@ export async function getLocationBySlug(slug: string): Promise<Location | null> 
     }
 
     const locations = await res.json();
-    return locations[0] || null;
+    const location = locations[0] || null;
+
+    // Convert image ID to URL
+    if (location && location.acf.featured_image) {
+      location.acf.featured_image = await getImageUrl(location.acf.featured_image);
+    }
+
+    return location;
   } catch (error) {
     console.error('Error fetching location:', error);
     return null;
@@ -137,7 +202,19 @@ export async function getTestimonials(): Promise<Testimonial[]> {
       throw new Error('Failed to fetch testimonials');
     }
 
-    return res.json();
+    const testimonials = await res.json();
+
+    // Convert image IDs to URLs
+    const testimonialsWithImages = await Promise.all(
+      testimonials.map(async (testimonial: Testimonial) => {
+        if (testimonial.acf.client_photo) {
+          testimonial.acf.client_photo = await getImageUrl(testimonial.acf.client_photo);
+        }
+        return testimonial;
+      })
+    );
+
+    return testimonialsWithImages;
   } catch (error) {
     console.error('Error fetching testimonials:', error);
     return [];

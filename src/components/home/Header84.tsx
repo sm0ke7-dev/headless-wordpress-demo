@@ -27,9 +27,9 @@ export function Header84() {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"
               className="w-full object-cover"
-              alt="Relume placeholder image"
+              alt="Physical therapy session"
             />
           </div>
         </div>

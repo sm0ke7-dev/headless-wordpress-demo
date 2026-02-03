@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Brand color variables */
+  :root {
+    --color-brand-primary: #0A6F6A;
+    --color-brand-secondary: #F2A65A;
+    --color-brand-accent: #355C7D;
+  }
+}
+
+@layer components {
+  /* Apply teal to primary buttons */
+  button[class*="bg-background-primary"],
+  .bg-background-primary {
+    background-color: var(--color-brand-primary) !important;
+    color: white !important;
+  }
+
+  /* Apply orange to secondary buttons */
+  button[class*="variant-secondary"] {
+    background-color: var(--color-brand-secondary) !important;
+    color: white !important;
+  }
+
+  /* Links */
+  a[class*="underline"] {
+    color: var(--color-brand-primary);
+  }
+
+  /* Hero sections with gradient */
+  main > section:first-child {
+    background: linear-gradient(135deg, var(--color-brand-primary) 0%, var(--color-brand-accent) 100%);
+  }
+
+  main > section:first-child h1,
+  main > section:first-child p {
+    color: white !important;
+  }
+}
