@@ -12,13 +12,27 @@ export default async function HomePage() {
 
   return (
     <main>
-      <Header84 />
-      <Layout520 />
-      <Layout367 />
-      <Layout423 />
-      <Testimonial22 testimonials={testimonials} />
-      <Team5 />
-      <Cta31 />
+      <div className="bg-green-900 text-white">
+        <Header84 />
+      </div>
+      <div className="bg-green-50">
+        <Layout520 />
+      </div>
+      <div className="bg-white">
+        <Layout367 />
+      </div>
+      <div className="bg-green-900 text-white">
+        <Layout423 />
+      </div>
+      <div className="bg-green-50">
+        <Testimonial22 testimonials={testimonials} />
+      </div>
+      <div className="bg-white">
+        <Team5 />
+      </div>
+      <div className="bg-green-900 text-white">
+        <Cta31 />
+      </div>
     </main>
   );
 }

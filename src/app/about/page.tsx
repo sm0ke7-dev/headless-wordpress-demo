@@ -13,13 +13,27 @@ export default async function AboutPage() {
 
   return (
     <main>
-      <Header64 />
-      <Layout19 />
-      <Layout522 />
-      <Team5 />
-      <Stats26 />
-      <Testimonial22 testimonials={testimonials} />
-      <Cta31 />
+      <div className="bg-green-900 text-white">
+        <Header64 />
+      </div>
+      <div className="bg-green-50">
+        <Layout19 />
+      </div>
+      <div className="bg-white">
+        <Layout522 />
+      </div>
+      <div className="bg-green-900 text-white">
+        <Team5 />
+      </div>
+      <div className="bg-green-50">
+        <Stats26 />
+      </div>
+      <div className="bg-white">
+        <Testimonial22 testimonials={testimonials} />
+      </div>
+      <div className="bg-green-900 text-white">
+        <Cta31 />
+      </div>
     </main>
   );
 }

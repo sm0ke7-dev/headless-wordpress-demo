@@ -9,10 +9,18 @@ export default async function LocationsPage() {
 
   return (
     <main>
-      <Header64 />
-      <LocationGrid locations={locations} />
-      <Faq4 />
-      <Cta31 />
+      <div className="bg-green-900 text-white">
+        <Header64 />
+      </div>
+      <div className="bg-green-50">
+        <LocationGrid locations={locations} />
+      </div>
+      <div className="bg-white">
+        <Faq4 />
+      </div>
+      <div className="bg-green-900 text-white">
+        <Cta31 />
+      </div>
     </main>
   );
 }
