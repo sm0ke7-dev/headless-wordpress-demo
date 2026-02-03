@@ -12,6 +12,14 @@ interface Testimonial22Props {
 export function Testimonial22({ testimonials }: Testimonial22Props) {
   // Show only first 3 testimonials
   const displayTestimonials = testimonials.slice(0, 3);
+
+  // Fallback images for when WordPress photos aren't uploaded
+  const fallbackImages = [
+    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face",
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+  ];
+
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -25,7 +33,7 @@ export function Testimonial22({ testimonials }: Testimonial22Props) {
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {displayTestimonials.map((testimonial) => (
+          {displayTestimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
               className="flex w-full flex-col items-start justify-between border border-border-primary p-6 md:p-8"
@@ -36,15 +44,14 @@ export function Testimonial22({ testimonials }: Testimonial22Props) {
                 </blockquote>
                 <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-auto md:flex-row md:items-center">
                   <div>
-                    {testimonial.acf.client_photo ? (
-                      <img
-                        src={testimonial.acf.client_photo}
-                        alt={testimonial.acf.client_name}
-                        className="size-12 min-h-12 min-w-12 rounded-full object-cover"
-                      />
-                    ) : (
-                      <div className="size-12 min-h-12 min-w-12 rounded-full bg-gray-200" />
-                    )}
+                    <img
+                      src={
+                        testimonial.acf.client_photo ||
+                        fallbackImages[index % fallbackImages.length]
+                      }
+                      alt={testimonial.acf.client_name}
+                      className="size-12 min-h-12 min-w-12 rounded-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-semibold">{testimonial.acf.client_name}</p>
