@@ -16,9 +16,12 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ServicePage({ params }: { params: { slug: string } }) {
-  // Fetch service data from WordPress using params.slug
-  const service = await getServiceBySlug(params.slug);
+export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
+  // Await params first (Next.js 15+ requirement)
+  const { slug } = await params;
+
+  // Fetch service data from WordPress using slug
+  const service = await getServiceBySlug(slug);
 
   // If service not found, show 404
   if (!service) {
