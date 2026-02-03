@@ -19,13 +19,6 @@ export function Testimonial22() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex w-full flex-col items-start justify-between border border-border-primary p-6 md:p-8">
             <div className="rb-5 mb-5 md:mb-6">
-              <div className="mb-8 md:mb-10 lg:mb-12">
-                <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
-                  alt="Webflow logo"
-                  className="max-h-12"
-                />
-              </div>
               <blockquote className="md:text-md">
                 "I stopped limping after three weeks. No guessing, just steady
                 progress."
@@ -33,8 +26,8 @@ export function Testimonial22() {
               <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-auto md:flex-row md:items-center">
                 <div>
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face"
+                    alt="Marcus Chen"
                     className="size-12 min-h-12 min-w-12 rounded-full object-cover"
                   />
                 </div>
@@ -52,13 +45,6 @@ export function Testimonial22() {
           </div>
           <div className="flex w-full flex-col items-start justify-between border border-border-primary p-6 md:p-8">
             <div className="rb-5 mb-5 md:mb-6">
-              <div className="mb-8 md:mb-10 lg:mb-12">
-                <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
-                  alt="Webflow logo"
-                  className="max-h-12"
-                />
-              </div>
               <blockquote className="md:text-md">
                 "My shoulder works again. They showed me exactly what was wrong
                 and fixed it."
@@ -66,8 +52,8 @@ export function Testimonial22() {
               <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-auto md:flex-row md:items-center">
                 <div>
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+                    alt="Jennifer Walsh"
                     className="size-12 min-h-12 min-w-12 rounded-full object-cover"
                   />
                 </div>
@@ -85,13 +71,6 @@ export function Testimonial22() {
           </div>
           <div className="flex w-full flex-col items-start justify-between border border-border-primary p-6 md:p-8">
             <div className="rb-5 mb-5 md:mb-6">
-              <div className="mb-8 md:mb-10 lg:mb-12">
-                <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
-                  alt="Webflow logo"
-                  className="max-h-12"
-                />
-              </div>
               <blockquote className="md:text-md">
                 "Back pain gone. I'm lifting weights and sleeping through the
                 night now."
@@ -99,8 +78,8 @@ export function Testimonial22() {
               <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-auto md:flex-row md:items-center">
                 <div>
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                    alt="David Morales"
                     className="size-12 min-h-12 min-w-12 rounded-full object-cover"
                   />
                 </div>
