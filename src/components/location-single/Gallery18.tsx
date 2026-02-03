@@ -64,8 +64,8 @@ export function Gallery18() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/3 md:px-4">
                   <div className="w-full">
                     <img
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 1"
+                      src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=600&fit=crop"
+                      alt="Physical therapy treatment room"
                       className="aspect-square size-full object-cover"
                     />
                   </div>
@@ -73,8 +73,8 @@ export function Gallery18() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/3 md:px-4">
                   <div className="w-full">
                     <img
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 2"
+                      src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=600&fit=crop"
+                      alt="Therapy equipment and workspace"
                       className="aspect-square size-full object-cover"
                     />
                   </div>
@@ -82,8 +82,8 @@ export function Gallery18() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/3 md:px-4">
                   <div className="w-full">
                     <img
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 3"
+                      src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=600&fit=crop"
+                      alt="Exercise and rehabilitation area"
                       className="aspect-square size-full object-cover"
                     />
                   </div>
@@ -91,8 +91,8 @@ export function Gallery18() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/3 md:px-4">
                   <div className="w-full">
                     <img
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 4"
+                      src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=600&fit=crop"
+                      alt="Physical therapy session"
                       className="aspect-square size-full object-cover"
                     />
                   </div>
@@ -100,8 +100,8 @@ export function Gallery18() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/3 md:px-4">
                   <div className="w-full">
                     <img
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 5"
+                      src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop"
+                      alt="Modern therapy facility"
                       className="aspect-square size-full object-cover"
                     />
                   </div>
@@ -109,8 +109,8 @@ export function Gallery18() {
                 <CarouselItem className="basis-1/2 px-3 md:basis-1/3 md:px-4">
                   <div className="w-full">
                     <img
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 6"
+                      src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=600&fit=crop"
+                      alt="Clinic waiting and reception area"
                       className="aspect-square size-full object-cover"
                     />
                   </div>

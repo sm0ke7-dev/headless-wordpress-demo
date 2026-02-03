@@ -22,9 +22,9 @@ export function Cta31() {
           </div>
         </div>
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=600&fit=crop"
           className="size-full object-cover"
-          alt="Relume placeholder image"
+          alt="Physical therapy clinic location"
         />
       </div>
     </section>

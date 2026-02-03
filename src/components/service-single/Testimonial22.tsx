@@ -31,8 +31,8 @@ export function Testimonial22() {
               <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-auto md:flex-row md:items-center">
                 <div>
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face"
+                    alt="Marcus Chen"
                     className="size-12 min-h-12 min-w-12 rounded-full object-cover"
                   />
                 </div>
@@ -64,8 +64,8 @@ export function Testimonial22() {
               <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-auto md:flex-row md:items-center">
                 <div>
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+                    alt="Sarah Mitchell"
                     className="size-12 min-h-12 min-w-12 rounded-full object-cover"
                   />
                 </div>
@@ -97,8 +97,8 @@ export function Testimonial22() {
               <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-auto md:flex-row md:items-center">
                 <div>
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                    alt="David Reeves"
                     className="size-12 min-h-12 min-w-12 rounded-full object-cover"
                   />
                 </div>

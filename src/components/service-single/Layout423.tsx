@@ -45,8 +45,8 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=1000&fit=crop"
+                alt="Manual therapy treatment"
                 className="size-full object-cover"
               />
             </div>
@@ -114,8 +114,8 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 2"
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=1000&fit=crop"
+                alt="Movement assessment"
                 className="size-full object-cover"
               />
             </div>
@@ -183,8 +183,8 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 3"
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=1000&fit=crop"
+                alt="Corrective exercises"
                 className="size-full object-cover"
               />
             </div>

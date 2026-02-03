@@ -24,9 +24,9 @@ export function Layout522() {
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1000&h=800&fit=crop"
                 className="size-full object-cover"
-                alt="Relume placeholder image"
+                alt="Evidence-based physical therapy"
               />
             </div>
             <div className="relative z-10">
@@ -56,9 +56,9 @@ export function Layout522() {
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=800&fit=crop"
                 className="size-full object-cover"
-                alt="Relume placeholder image"
+                alt="Patient empowerment and recovery"
               />
             </div>
             <div className="relative z-10 flex flex-1 flex-col justify-between">
@@ -90,9 +90,9 @@ export function Layout522() {
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=800&fit=crop"
                 className="size-full object-cover"
-                alt="Relume placeholder image"
+                alt="Progress tracking and measurement"
               />
             </div>
             <div className="relative z-10 flex flex-1 flex-col justify-between">

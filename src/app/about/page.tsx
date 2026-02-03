@@ -5,8 +5,12 @@ import { Team5 } from "@/components/about/Team5";
 import { Stats26 } from "@/components/about/Stats26";
 import { Testimonial22 } from "@/components/about/Testimonial22";
 import { Cta31 } from "@/components/about/Cta31";
+import { getTestimonials } from "@/lib/wordpress";
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  // Fetch testimonials from WordPress
+  const testimonials = await getTestimonials();
+
   return (
     <main>
       <Header64 />
@@ -14,7 +18,7 @@ export default function AboutPage() {
       <Layout522 />
       <Team5 />
       <Stats26 />
-      <Testimonial22 />
+      <Testimonial22 testimonials={testimonials} />
       <Cta31 />
     </main>
   );

@@ -47,9 +47,9 @@ export function Layout19() {
           </div>
           <div>
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop"
               className="w-full object-cover"
-              alt="Relume placeholder image"
+              alt="Physical therapist working with patient"
             />
           </div>
         </div>

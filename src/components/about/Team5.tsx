@@ -22,8 +22,8 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face"
+                alt="Sarah Mitchell"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
             </div>
@@ -52,8 +52,8 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
+                alt="James Chen"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
             </div>
@@ -80,8 +80,8 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face"
+                alt="Marcus Rodriguez"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
             </div>
@@ -110,8 +110,8 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+                alt="Elena Vasquez"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
             </div>
@@ -139,8 +139,8 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                alt="David Park"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
             </div>
@@ -166,8 +166,8 @@ export function Team5() {
           <div className="flex flex-col text-center">
             <div className="rb-5 mb-5 flex w-full items-center justify-center md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face"
+                alt="Jessica Walsh"
                 className="size-20 min-h-20 min-w-20 rounded-full object-cover"
               />
             </div>

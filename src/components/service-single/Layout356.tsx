@@ -47,9 +47,9 @@ export function Layout356() {
                     </div>
                     <div className="relative">
                       <img
-                        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-1.svg"
+                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=1000&fit=crop"
                         className="h-[25rem] w-full object-cover sm:h-[30rem] lg:h-[60vh]"
-                        alt="Relume placeholder image 1"
+                        alt="Physical therapy assessment"
                       />
                     </div>
                   </div>
@@ -97,9 +97,9 @@ export function Layout356() {
                     </div>
                     <div className="relative">
                       <img
-                        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-2.svg"
+                        src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=1000&fit=crop"
                         className="h-[25rem] w-full object-cover sm:h-[30rem] lg:h-[60vh]"
-                        alt="Relume placeholder image 2"
+                        alt="Treatment and therapy session"
                       />
                     </div>
                   </div>
@@ -147,9 +147,9 @@ export function Layout356() {
                     </div>
                     <div className="relative">
                       <img
-                        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-3.svg"
+                        src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=1000&fit=crop"
                         className="h-[25rem] w-full object-cover sm:h-[30rem] lg:h-[60vh]"
-                        alt="Relume placeholder image 3"
+                        alt="Independent recovery and movement"
                       />
                     </div>
                   </div>

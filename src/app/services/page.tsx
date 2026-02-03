@@ -12,7 +12,7 @@ export default async function ServicesPage() {
   return (
     <main>
       <Header64 />
-      <Layout423 />
+      <Layout423 services={services} />
       <Layout525 services={services} />
       <Testimonial22 />
       <Cta31 />

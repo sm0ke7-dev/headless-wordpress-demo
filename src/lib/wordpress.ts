@@ -36,6 +36,7 @@ export interface Service {
   slug: string;
   acf: {
     featured_image: string | number;
+    hero_image: string | number;
     short_description: string;
     full_description: string;
     benefits: string;
@@ -90,6 +91,9 @@ export async function getServices(): Promise<Service[]> {
         if (service.acf.featured_image) {
           service.acf.featured_image = await getImageUrl(service.acf.featured_image);
         }
+        if (service.acf.hero_image) {
+          service.acf.hero_image = await getImageUrl(service.acf.hero_image);
+        }
         return service;
       })
     );
@@ -117,9 +121,12 @@ export async function getServiceBySlug(slug: string): Promise<Service | null> {
     const services = await res.json();
     const service = services[0] || null;
 
-    // Convert image ID to URL
+    // Convert image IDs to URLs
     if (service && service.acf.featured_image) {
       service.acf.featured_image = await getImageUrl(service.acf.featured_image);
+    }
+    if (service && service.acf.hero_image) {
+      service.acf.hero_image = await getImageUrl(service.acf.hero_image);
     }
 
     return service;
